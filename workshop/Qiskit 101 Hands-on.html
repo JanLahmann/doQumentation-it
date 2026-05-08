@@ -14,8 +14,8 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"doQumentation","applicationCategory":"EducationalApplication","operatingSystem":"Web, Docker, Raspberry Pi","description":"Open-source frontend for IBM Quantum documentation with live Jupyter code execution, simulator mode, and offline support.","url":"https://doqumentation.org","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"license":"https://www.apache.org/licenses/LICENSE-2.0"}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script><link rel="stylesheet" href="/assets/css/styles.09715444.css">
-<script src="/assets/js/runtime~main.b84b5b76.js" defer="defer"></script>
-<script src="/assets/js/main.08e481aa.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.5dc3b289.js" defer="defer"></script>
+<script src="/assets/js/main.ea120e36.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -267,7 +267,7 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 </ol>
 <p>Abbiamo appena completato il <code>Step 1: Mapping</code>, costruendo Circuit quantistici per generare lo stato quantistico desiderato. Ora, percorriamo i passi rimanenti per vedere i risultati.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="optimize">Optimize<a href="#optimize" class="hash-link" aria-label="Link diretto a Optimize" title="Link diretto a Optimize" translate="no">​</a></h3>
-<p>Here we will set the backend to run circuits - you can select <code>least busy</code> qpu among your accessible qpu groups, or you can simply choose a simulator if you don&#x27;t have enough remaining GPU time. Once select a backend, <code>pass_manager</code> will <code>transpile</code> your circuits into native gate sets of the backend you chose and optimize it for you to get a better result. You can easily declare <code>pass_manager</code> by using <code>generate_preset_pass_manager</code> and setting the <code>optimization_level</code>, which is a higher number indicating more optimization steps.</p>
+<p>Qui imposteremo il backend per eseguire i Circuit — puoi selezionare il QPU <code>least busy</code> tra i tuoi gruppi di QPU accessibili, oppure scegliere semplicemente un simulatore se non hai abbastanza tempo GPU rimanente. Una volta scelto un backend, il <code>pass_manager</code> eseguirà il <code>transpile</code> dei tuoi Circuit nei set di gate nativi del backend scelto e li ottimizzerà per ottenere un risultato migliore. Puoi dichiarare facilmente il <code>pass_manager</code> usando <code>generate_preset_pass_manager</code> e impostando l&#x27;<code>optimization_level</code>, dove un numero più alto indica più passaggi di ottimizzazione.</p>
 <p>Il passo successivo è emozionante: eseguiremo il Circuit quantistico usando Qiskit Runtime!</p>
 <p>Lo faremo utilizzando le due <a href="https://quantum.cloud.ibm.com/docs/guides/primitives" target="_blank" rel="noopener noreferrer" class="">primitive Qiskit</a>:</p>
 <ol>
