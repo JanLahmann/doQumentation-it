@@ -15,8 +15,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.e55021e4.css">
-<script src="/assets/js/runtime~main.f7041604.js" defer="defer"></script>
-<script src="/assets/js/main.154b4498.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.a8aecee1.js" defer="defer"></script>
+<script src="/assets/js/main.33a80aac.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/tutorials/wire-cutting" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/tutorials/wire-cutting" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/tutorials/wire-cutting" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/tutorials/wire-cutting" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/tutorials/wire-cutting" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/tutorials/wire-cutting" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/tutorials/wire-cutting" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/tutorials/wire-cutting" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/tutorials/wire-cutting" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/tutorials/wire-cutting" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/tutorials/wire-cutting" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/tutorials/wire-cutting" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/tutorials/wire-cutting" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/tutorials/wire-cutting" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/tutorials/wire-cutting" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/tutorials/wire-cutting" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/tutorials/wire-cutting" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/tutorials/wire-cutting" /><link data-rh-hreflang rel="alternate" hreflang="swg" href="https://swg.doqumentation.org/tutorials/wire-cutting" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://bad.doqumentation.org/tutorials/wire-cutting" /><link data-rh-hreflang rel="alternate" hreflang="bar" href="https://bar.doqumentation.org/tutorials/wire-cutting" /><link data-rh-hreflang rel="alternate" hreflang="ksh" href="https://ksh.doqumentation.org/tutorials/wire-cutting" /><link data-rh-hreflang rel="alternate" hreflang="nds" href="https://nds.doqumentation.org/tutorials/wire-cutting" /><link data-rh-hreflang rel="alternate" hreflang="gsw" href="https://gsw.doqumentation.org/tutorials/wire-cutting" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://sax.doqumentation.org/tutorials/wire-cutting" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://bln.doqumentation.org/tutorials/wire-cutting" /><link data-rh-hreflang rel="alternate" hreflang="de-AT" href="https://aut.doqumentation.org/tutorials/wire-cutting" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/tutorials/wire-cutting" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -46,11 +46,21 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="requirements">Requisiti<a href="#requirements" class="hash-link" aria-label="Link diretto a Requisiti" title="Link diretto a Requisiti" translate="no">​</a></h2>
 <p>Prima di iniziare questo tutorial, assicurati di aver installato quanto segue:</p>
 <ul>
-<li class="">Qiskit SDK v2.0 o successivo, con supporto per la <a href="https://docs.quantum.ibm.com/api/qiskit/visualization" target="_blank" rel="noopener noreferrer" class="">visualizzazione</a></li>
-<li class="">Qiskit Runtime v0.22 o successivo ( <code>pip install qiskit-ibm-runtime</code> )</li>
-<li class="">Addon Qiskit per il circuit cutting v0.10.0 o successivo (<code>pip install qiskit-addon-cutting</code>)</li>
-<li class="">Qiskit addon utils 0.3 o successivo (<code>pip install qiskit-addon-utils</code>)</li>
-<li class="">Qiskit Aer (<code>pip install qiskit-aer</code> )</li>
+<li class="">
+<p>Qiskit SDK v2.0 o successivo, con supporto per la <a href="https://docs.quantum.ibm.com/api/qiskit/visualization" target="_blank" rel="noopener noreferrer" class="">visualizzazione</a></p>
+</li>
+<li class="">
+<p>Qiskit Runtime v0.22 o successivo ( <code>pip install qiskit-ibm-runtime</code> )</p>
+</li>
+<li class="">
+<p>Addon Qiskit per il circuit cutting v0.10.0 o successivo (<code>pip install qiskit-addon-cutting</code>)</p>
+</li>
+<li class="">
+<p>Qiskit addon utils 0.3 o successivo (<code>pip install qiskit-addon-utils</code>)</p>
+</li>
+<li class="">
+<p>Qiskit Aer (<code>pip install qiskit-aer</code> )</p>
+</li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="setup">Configurazione<a href="#setup" class="hash-link" aria-label="Link diretto a Configurazione" title="Link diretto a Configurazione" translate="no">​</a></h2>
 <div class="executable-code"><div class="executable-code__code" style="display:block"><div class="language-python codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-python codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv codeBlockLinesWithNumbering_o6Pm" style="counter-reset:line-count 0"><div class="token-line codeLine_lJS_" style="color:#393A34"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token comment" style="color:#999988;font-style:italic"># Added by doQumentation — required packages for this notebook</span><span class="token plain"></span></span><br></div><div class="token-line codeLine_lJS_" style="color:#393A34"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">!pip install </span><span class="token operator" style="color:#393A34">-</span><span class="token plain">q matplotlib numpy qiskit qiskit</span><span class="token operator" style="color:#393A34">-</span><span class="token plain">addon</span><span class="token operator" style="color:#393A34">-</span><span class="token plain">cutting qiskit</span><span class="token operator" style="color:#393A34">-</span><span class="token plain">aer qiskit</span><span class="token operator" style="color:#393A34">-</span><span class="token plain">ibm</span><span class="token operator" style="color:#393A34">-</span><span class="token plain">runtime</span></span><br></div></code></pre></div></div></div></div>

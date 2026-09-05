@@ -15,8 +15,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.e55021e4.css">
-<script src="/assets/js/runtime~main.f7041604.js" defer="defer"></script>
-<script src="/assets/js/main.154b4498.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.a8aecee1.js" defer="defer"></script>
+<script src="/assets/js/main.33a80aac.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="swg" href="https://swg.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://bad.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="bar" href="https://bar.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="ksh" href="https://ksh.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="nds" href="https://nds.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="gsw" href="https://gsw.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://sax.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://bln.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="de-AT" href="https://aut.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/workshop/Hands-on Introduction to Qiskit" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -36,12 +36,24 @@
 <p>Per eseguire i tuoi circuiti quantistici sull&#x27;hardware, devi prima configurare il tuo account.
 Puoi farlo nel seguente modo:</p>
 <ol>
-<li class="">Vai alla <a href="https://quantum.cloud.ibm.com/" target="_blank" rel="noopener noreferrer" class="">IBM Quantum® Platform aggiornata</a>.</li>
-<li class="">Vai all&#x27;angolo in alto a destra (come mostrato nell&#x27;immagine sopra), crea il tuo token API e copialo in un luogo sicuro.</li>
-<li class="">Nella cella successiva, sostituisci <code>deleteThisAndPasteYourAPIKeyHere</code> con la tua chiave API.</li>
-<li class="">Vai all&#x27;angolo in basso a sinistra (come mostrato nell&#x27;immagine sopra) e <strong>crea la tua istanza</strong>. Assicurati di scegliere il piano aperto.</li>
-<li class="">Dopo aver creato l&#x27;istanza, copia il codice CRN associato. Potrebbe essere necessario aggiornare la pagina per vedere l&#x27;istanza.</li>
-<li class="">Nella cella sottostante, sostituisci <code>deleteThisAndPasteYourCRNHere</code> con il tuo codice CRN.</li>
+<li class="">
+<p>Vai alla <a href="https://quantum.cloud.ibm.com/" target="_blank" rel="noopener noreferrer" class="">IBM Quantum® Platform aggiornata</a>.</p>
+</li>
+<li class="">
+<p>Vai all&#x27;angolo in alto a destra (come mostrato nell&#x27;immagine sopra), crea il tuo token API e copialo in un luogo sicuro.</p>
+</li>
+<li class="">
+<p>Nella cella successiva, sostituisci <code>deleteThisAndPasteYourAPIKeyHere</code> con la tua chiave API.</p>
+</li>
+<li class="">
+<p>Vai all&#x27;angolo in basso a sinistra (come mostrato nell&#x27;immagine sopra) e <strong>crea la tua istanza</strong>. Assicurati di scegliere il piano aperto.</p>
+</li>
+<li class="">
+<p>Dopo aver creato l&#x27;istanza, copia il codice CRN associato. Potrebbe essere necessario aggiornare la pagina per vedere l&#x27;istanza.</p>
+</li>
+<li class="">
+<p>Nella cella sottostante, sostituisci <code>deleteThisAndPasteYourCRNHere</code> con il tuo codice CRN.</p>
+</li>
 </ol>
 <p>Consulta <a href="https://quantum.cloud.ibm.com/docs/guides/cloud-setup" target="_blank" rel="noopener noreferrer" class="">questa guida</a> per maggiori dettagli su come configurare il tuo account IBM Cloud®.</p>
 <div class="alert alert-block alert-warning"><p>⚠️ <strong>Nota:</strong> Tratta la tua chiave API come una password sicura. Consulta la guida <a href="https://quantum.cloud.ibm.com/docs/guides/cloud-setup#cloud-save" target="_blank" rel="noopener noreferrer" class="">Configurazione Cloud</a> per ulteriori informazioni sull&#x27;utilizzo della tua chiave API in ambienti sicuri e non attendibili.</p></div>
@@ -399,11 +411,21 @@ c-16-25.333-24-45-24-59z"></path></svg></span></span></span></span></span></span
 </ul>
 <p>E come funziona? Il flusso di lavoro è il seguente</p>
 <ol>
-<li class=""><strong>Preparare lo stato di Alice <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>ψ</mi><mo stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">|\psi\rangle</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.03588em">ψ</span><span class="mclose">⟩</span></span></span></span> su <code>q</code>.</strong> Creeremo uno stato specifico come <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mo>+</mo><mo stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">|+\rangle</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord">∣</span><span class="mord">+</span><span class="mclose">⟩</span></span></span></span> per la verifica.</li>
-<li class=""><strong>Creare l&#x27;entanglement:</strong> generare una coppia di Bell tra <code>a</code> e <code>b</code>.</li>
-<li class=""><strong>Operazioni di Alice:</strong> Alice esegue una &quot;misurazione di Bell&quot; sui suoi due qubit (<code>q</code> e <code>a</code>) e memorizza i risultati classici in <code>c0</code> e <code>c1</code>.</li>
-<li class=""><strong>Comunicazione classica:</strong> Alice invia i suoi due bit classici (<code>c0</code>, <code>c1</code>) a Bob.</li>
-<li class=""><strong>Correzioni di Bob:</strong> Bob applica gate quantistici specifici (X e/o Z) al suo qubit (<code>b</code>), condizionati dai valori di <code>c0</code> e <code>c1</code> ricevuti.</li>
+<li class="">
+<p><strong>Preparare lo stato di Alice <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>ψ</mi><mo stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">|\psi\rangle</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.03588em">ψ</span><span class="mclose">⟩</span></span></span></span> su <code>q</code>.</strong> Creeremo uno stato specifico come <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mo>+</mo><mo stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">|+\rangle</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord">∣</span><span class="mord">+</span><span class="mclose">⟩</span></span></span></span> per la verifica.</p>
+</li>
+<li class="">
+<p><strong>Creare l&#x27;entanglement:</strong> generare una coppia di Bell tra <code>a</code> e <code>b</code>.</p>
+</li>
+<li class="">
+<p><strong>Operazioni di Alice:</strong> Alice esegue una &quot;misurazione di Bell&quot; sui suoi due qubit (<code>q</code> e <code>a</code>) e memorizza i risultati classici in <code>c0</code> e <code>c1</code>.</p>
+</li>
+<li class="">
+<p><strong>Comunicazione classica:</strong> Alice invia i suoi due bit classici (<code>c0</code>, <code>c1</code>) a Bob.</p>
+</li>
+<li class="">
+<p><strong>Correzioni di Bob:</strong> Bob applica gate quantistici specifici (X e/o Z) al suo qubit (<code>b</code>), condizionati dai valori di <code>c0</code> e <code>c1</code> ricevuti.</p>
+</li>
 </ol>
 <p>Se tutto viene fatto correttamente, il qubit <code>b</code> di Bob finirà nello stato <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>ψ</mi><mo stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">|\psi\rangle</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.03588em">ψ</span><span class="mclose">⟩</span></span></span></span>, lo stato originale del <code>q</code> di Alice!</p>
 <p>Per una spiegazione e un&#x27;esplorazione più approfondite del teletrasporto quantistico, inclusa la spiegazione matematica del perché questo protocollo funziona, puoi fare riferimento alle risorse di IBM Quantum Learning: <a href="https://quantum.cloud.ibm.com/learning/courses/basics-of-quantum-information/entanglement-in-action/quantum-teleportation" target="_blank" rel="noopener noreferrer" class="">Quantum Teleportation</a>. Questo fa parte del corso <a href="https://quantum.cloud.ibm.com/learning/courses/basics-of-quantum-information" target="_blank" rel="noopener noreferrer" class="">Basics of Quantum Information</a>.</p>
