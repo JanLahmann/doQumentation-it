@@ -14,8 +14,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.d115d309.css">
-<script src="/assets/js/runtime~main.ecbf4faf.js" defer="defer"></script>
-<script src="/assets/js/main.244fde4e.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.9908b457.js" defer="defer"></script>
+<script src="/assets/js/main.64412521.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/guides/migrate-to-noise-learner-v3" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/guides/migrate-to-noise-learner-v3" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/guides/migrate-to-noise-learner-v3" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/guides/migrate-to-noise-learner-v3" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/guides/migrate-to-noise-learner-v3" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/guides/migrate-to-noise-learner-v3" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/guides/migrate-to-noise-learner-v3" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/guides/migrate-to-noise-learner-v3" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/guides/migrate-to-noise-learner-v3" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/guides/migrate-to-noise-learner-v3" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/guides/migrate-to-noise-learner-v3" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/guides/migrate-to-noise-learner-v3" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/guides/migrate-to-noise-learner-v3" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/guides/migrate-to-noise-learner-v3" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/guides/migrate-to-noise-learner-v3" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/guides/migrate-to-noise-learner-v3" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/guides/migrate-to-noise-learner-v3" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/guides/migrate-to-noise-learner-v3" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/guides/migrate-to-noise-learner-v3" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -38,12 +38,12 @@ passaggi di mitigazione non funzionerebbero correttamente.</p>
 <p>A partire da <code>qiskit-ibm-runtime</code> v0.47.0, è disponibile una nuova classe
 <a href="https://docs.quantum.ibm.com/api/qiskit-ibm-runtime/noise-learner-v3-noise-learner-v3" target="_blank" rel="noopener noreferrer" class=""><code>NoiseLearnerV3</code></a>
 compatibile con la primitiva <code>Executor</code> e il
-<a class="" href="/guides/directed-execution-model">modello di esecuzione diretta</a>.
-Questo nuovo modello offre un&#x27;esperienza <strong>white-box</strong> fornendo gli elementi per catturare l&#x27;intenzione progettuale
-lato client, e un&#x27;unica primitiva lato server (Executor) elabora tali input esattamente come
+<a class="" href="/guides/directed-execution-model">modello di esecuzione guidata</a>.
+Questo nuovo modello offre un&#x27;esperienza <strong>white-box</strong> fornendo lato client gli strumenti per esprimere le scelte di progettazione
+e un&#x27;unica primitiva lato server (Executor) elabora tali input esattamente come
 indicato — non prende decisioni implicite per tuo conto. A differenza dell&#x27;originale <code>NoiseLearner</code>,
 controlli tu come stratificare i tuoi circuiti quando usi <code>NoiseLearnerV3</code>, e la classe accetta semplicemente una lista di istruzioni di circuito boxed
-(per esempio, livelli unici) come suo input.</p>
+(per esempio, livelli distinti) come suo input.</p>
 <p><code>NoiseLearnerV3</code> supporta anche l&#x27;apprendimento del rumore di misurazione. Per ogni istruzione nella lista di input, esegue il
 protocollo di apprendimento Pauli-Lindblad se il box contiene gate a uno e due qubit, e il
 protocollo <a class="" href="/guides/error-mitigation-and-suppression-techniques#twirled-readout-error-extinction-trex">TREX</a>
@@ -117,7 +117,7 @@ da cui provengono. PEA/PEC era già stato abilitato su di esso nel passaggio 2.<
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="references">Riferimenti<a href="#references" class="hash-link" aria-label="Link diretto a Riferimenti" title="Link diretto a Riferimenti" translate="no">​</a></h2>
 <ul>
 <li class="">
-<p><a class="" href="/guides/directed-execution-model">Modello di esecuzione diretta</a></p>
+<p><a class="" href="/guides/directed-execution-model">Modello di esecuzione guidata</a></p>
 </li>
 <li class="">
 <p><a class="" href="/guides/noise-learning">Helper per l&#x27;apprendimento del rumore</a></p>
