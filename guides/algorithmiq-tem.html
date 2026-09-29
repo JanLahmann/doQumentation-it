@@ -14,8 +14,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.d115d309.css">
-<script src="/assets/js/runtime~main.6de2cbbd.js" defer="defer"></script>
-<script src="/assets/js/main.642cea25.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.3b229c6e.js" defer="defer"></script>
+<script src="/assets/js/main.24917470.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/guides/algorithmiq-tem" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -74,7 +74,7 @@ complete, TEM stima in modo efficiente più osservabili con gli stessi dati di
 misurazione del computer quantistico.</li>
 <li class=""><strong>Mitigazione degli errori di lettura</strong>: la Qiskit Function TEM include anche
 un <a href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.5.033154" target="_blank" rel="noopener noreferrer" class="">metodo proprietario di mitigazione degli errori di lettura</a>
-in grado di ridurre significativamente gli errori di readout dopo una breve
+in grado di ridurre significativamente gli errori di lettura dopo una breve
 sessione di calibrazione.</li>
 <li class=""><strong>Precisione</strong>: TEM migliora significativamente la precisione e l&#x27;affidabilità
 delle simulazioni quantistiche digitali, rendendo gli algoritmi quantistici più
@@ -83,7 +83,7 @@ accurati e affidabili.</li>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Descrizione<a href="#description" class="hash-link" aria-label="Link diretto a Descrizione" title="Link diretto a Descrizione" translate="no">​</a></h2>
 <p>La funzione TEM consente di ottenere valori attesi con mitigazione degli errori
 per più osservabili su un circuito quantistico con un overhead di campionamento
-minimo. Il circuito viene misurato con una misura a operatore a valore positivo
+minimo. Il circuito viene misurato con una misura a valori operatoriali positivi (POVM)
 informativamente completa (IC-POVM), e gli esiti di misurazione raccolti vengono
 elaborati su un computer classico. Questa misurazione viene utilizzata per
 applicare i metodi di reti tensoriali e costruire una mappa di inversione del
@@ -95,7 +95,7 @@ ottimizzati per minimizzare il numero di layer con gate a due qubit (i gate più
 rumorosi sui dispositivi quantistici). Il rumore che agisce sui layer viene
 appreso tramite
 <a href="https://docs.quantum.ibm.com/api/qiskit-ibm-runtime/noise-learner-noise-learner" target="_blank" rel="noopener noreferrer" class="">Qiskit Runtime</a>
-usando un modello di rumore sparse Pauli-Lindblad come descritto in E. van den
+usando un modello di rumore di Pauli-Lindblad sparso come descritto in E. van den
 Berg, Z. Minev, A. Kandala, K. Temme, Nat. Phys. (2023).
 <a href="https://arxiv.org/abs/2201.09866" target="_blank" rel="noopener noreferrer" class="">arXiv:2201.09866</a>.</p>
 <p>Il modello di rumore è una descrizione accurata del rumore sul dispositivo, in

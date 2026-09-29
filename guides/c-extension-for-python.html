@@ -14,8 +14,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.d115d309.css">
-<script src="/assets/js/runtime~main.6de2cbbd.js" defer="defer"></script>
-<script src="/assets/js/main.642cea25.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.3b229c6e.js" defer="defer"></script>
+<script src="/assets/js/main.24917470.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/guides/c-extension-for-python" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -38,10 +38,10 @@ con un caso d&#x27;uso reale negli addon Qiskit.</p>
 <li class="">
 <p><a href="https://numpy.org/doc/stable/user/c-info.how-to-extend.html" target="_blank" rel="noopener noreferrer" class="">La documentazione NumPy sull&#x27;uso della sua C API</a>.</p>
 </li>
-</ul><p>L&#x27;API C di Qiskit è esposta per i moduli di estensione Python in modo molto simile alla C API di NumPy.
+</ul><p>L&#x27;API C di Qiskit è esposta per i moduli di estensione Python in modo molto simile all&#x27;API C di NumPy.
 Se hai già programmato un&#x27;estensione NumPy, troverai il processo Qiskit familiare.</p></div></div>
 <div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>avviso</div><div class="admonitionContent_BuS1"><p>L&#x27;API C di Qiskit è ancora sperimentale. Pertanto non esiste ancora un&#x27;interfaccia di programmazione o
-binaria completamente stabile, e potrebbero esserci modifiche che rompono la compatibilità tra versioni minor.</p><p>Ad esempio, un modulo di estensione che usa Qiskit v2.4.0 al momento della compilazione è garantito per funzionare con
+binaria completamente stabile, e potrebbero esserci modifiche che rompono la compatibilità tra versioni minori.</p><p>Ad esempio, un modulo di estensione che usa Qiskit v2.4.0 al momento della compilazione funziona sicuramente con
 Qiskit v2.4.1 a runtime, ma potrebbe non funzionare con Qiskit v2.5.0 a runtime.</p></div></div>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="requirements">Requisiti<a href="#requirements" class="hash-link" aria-label="Link diretto a Requisiti" title="Link diretto a Requisiti" translate="no">​</a></h2>
 <p>Completa le istruzioni nell&#x27;argomento <a class="" href="/guides/install-c-api">Install</a> per installare quanto segue:</p>
@@ -53,8 +53,8 @@ Qiskit v2.4.1 a runtime, ma potrebbe non funzionare con Qiskit v2.5.0 a runtime.
 <p>Una versione di Python che include i suoi header dell&#x27;API C.</p>
 </li>
 </ul>
-<p>Dovresti anche avere familiarità, o essere disposto a consultare, le funzioni e gli oggetti disponibili
-nella <a href="https://docs.quantum.ibm.com/api/qiskit-c" target="_blank" rel="noopener noreferrer" class="">Qiskit C API</a>, e dovresti avere una certa familiarità con la programmazione in C.</p>
+<p>Dovresti anche conoscere le funzioni e gli oggetti disponibili
+nell&#x27;<a href="https://docs.quantum.ibm.com/api/qiskit-c" target="_blank" rel="noopener noreferrer" class="">API C di Qiskit</a>, o essere pronto a consultarli, e dovresti avere una certa familiarità con la programmazione in C.</p>
 <p>Parti da una directory vuota.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="create-the-directory-structure">Creare la struttura delle directory<a href="#create-the-directory-structure" class="hash-link" aria-label="Link diretto a Creare la struttura delle directory" title="Link diretto a Creare la struttura delle directory" translate="no">​</a></h2>
 <p>Useremo una struttura di directory basata su <code>src</code> e un semplice sistema di build basato su <code>setuptools</code>. Queste
@@ -121,14 +121,14 @@ senza supporto per le operazioni di control-flow.</p>
 <p><a href="https://numpy.org/doc/stable/user/c-info.how-to-extend.html" target="_blank" rel="noopener noreferrer" class="">La documentazione NumPy sull&#x27;uso della sua C API</a>.</p>
 </li>
 <li class="">
-<p><a class="" href="/docs/api/qiskit-c">Il riferimento alla C API di Qiskit</a>.</p>
+<p><a class="" href="/docs/api/qiskit-c">Il riferimento all&#x27;API C di Qiskit</a>.</p>
 </li>
 </ul></div></div>
 <p>Questa sezione riguarda la vera estensione C. È il file più complesso del
 progetto, quindi lo divideremo in fasi.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="configure-the-header-files">Configurare i file header<a href="#configure-the-header-files" class="hash-link" aria-label="Link diretto a Configurare i file header" title="Link diretto a Configurare i file header" translate="no">​</a></h3>
-<p>Quando si compila un modulo di estensione Python, devi includere <code>Python.h</code> prima di qualsiasi altro file.
-Per usare la C API di Qiskit in un modulo di estensione, devi definire la macro
+<p>Quando compili un modulo di estensione Python, devi includere <code>Python.h</code> prima di qualsiasi altro file.
+Per usare l&#x27;API C di Qiskit in un modulo di estensione, devi definire la macro
 <code>QISKIT_PYTHON_EXTENSION</code> prima di includere <code>qiskit.h</code>.</p>
 <p>I nostri include appaiono quindi così:</p>
 <p><strong><code>src/spectator_measures/_coremodule.c</code></strong></p>

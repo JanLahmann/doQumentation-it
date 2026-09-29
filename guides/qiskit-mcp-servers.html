@@ -14,8 +14,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.d115d309.css">
-<script src="/assets/js/runtime~main.6de2cbbd.js" defer="defer"></script>
-<script src="/assets/js/main.642cea25.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.3b229c6e.js" defer="defer"></script>
+<script src="/assets/js/main.24917470.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/guides/qiskit-mcp-servers" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/guides/qiskit-mcp-servers" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/guides/qiskit-mcp-servers" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/guides/qiskit-mcp-servers" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/guides/qiskit-mcp-servers" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/guides/qiskit-mcp-servers" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/guides/qiskit-mcp-servers" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/guides/qiskit-mcp-servers" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/guides/qiskit-mcp-servers" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/guides/qiskit-mcp-servers" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/guides/qiskit-mcp-servers" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/guides/qiskit-mcp-servers" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/guides/qiskit-mcp-servers" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/guides/qiskit-mcp-servers" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/guides/qiskit-mcp-servers" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/guides/qiskit-mcp-servers" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/guides/qiskit-mcp-servers" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/guides/qiskit-mcp-servers" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/guides/qiskit-mcp-servers" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -30,7 +30,7 @@
 <p>I server MCP di Qiskit permettono agli assistenti AI di aiutarti con le attività di calcolo quantistico, come le seguenti:</p>
 <ul>
 <li class="">
-<p>Creare, manipolare e trasporre circuiti quantistici</p>
+<p>Creare, manipolare e transpilare circuiti quantistici</p>
 </li>
 <li class="">
 <p>Recuperare e cercare documentazione Qiskit, guide e riferimenti API</p>
@@ -57,7 +57,7 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-is-included">Cosa è incluso?<a href="#what-is-included" class="hash-link" aria-label="Link diretto a Cosa è incluso?" title="Link diretto a Cosa è incluso?" translate="no">​</a></h2>
 <p>Sono disponibili i seguenti server MCP:</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="qiskit-mcp-server">Server MCP di Qiskit<a href="#qiskit-mcp-server" class="hash-link" aria-label="Link diretto a Server MCP di Qiskit" title="Link diretto a Server MCP di Qiskit" translate="no">​</a></h3>
-<p>Fornisce le funzionalità core di calcolo quantistico per lo sviluppo locale. Questo server consente agli assistenti AI di creare, manipolare e trasporre circuiti quantistici, nonché di serializzarli in formati come OpenQASM 3 e QPY.</p>
+<p>Fornisce le funzionalità fondamentali di calcolo quantistico per lo sviluppo locale. Questo server consente agli assistenti AI di creare, manipolare e transpilare circuiti quantistici, nonché di serializzarli in formati come OpenQASM 3 e QPY.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="qiskit-runtime-mcp-server">Server MCP di Qiskit Runtime<a href="#qiskit-runtime-mcp-server" class="hash-link" aria-label="Link diretto a Server MCP di Qiskit Runtime" title="Link diretto a Server MCP di Qiskit Runtime" translate="no">​</a></h3>
 <p>Fornisce accesso ai servizi cloud IBM Quantum tramite IBM Quantum Compute Service. Ciò consente agli assistenti AI di interagire con i backend quantistici, inviare job e recuperare i risultati.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="qiskit-docs-mcp-server">Server MCP di Qiskit Docs<a href="#qiskit-docs-mcp-server" class="hash-link" aria-label="Link diretto a Server MCP di Qiskit Docs" title="Link diretto a Server MCP di Qiskit Docs" translate="no">​</a></h3>
