@@ -14,8 +14,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.d115d309.css">
-<script src="/assets/js/runtime~main.fabb19c3.js" defer="defer"></script>
-<script src="/assets/js/main.c41ba0b6.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.6de2cbbd.js" defer="defer"></script>
+<script src="/assets/js/main.b5759611.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/guides/custom-roles" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/guides/custom-roles" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/guides/custom-roles" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/guides/custom-roles" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/guides/custom-roles" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/guides/custom-roles" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/guides/custom-roles" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/guides/custom-roles" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/guides/custom-roles" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/guides/custom-roles" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/guides/custom-roles" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/guides/custom-roles" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/guides/custom-roles" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/guides/custom-roles" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/guides/custom-roles" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/guides/custom-roles" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/guides/custom-roles" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/guides/custom-roles" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/guides/custom-roles" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -93,19 +93,19 @@ Per aggiungere le azioni al tuo ruolo personalizzato, clicca su Add alla fine de
 <p>Una volta aggiunte tutte le azioni che vuoi associare al ruolo, clicca su Create.</p>
 </li>
 <li class="">
-<p>Vai a <a href="https://cloud.ibm.com/iam/groups" target="_blank" rel="noopener noreferrer" class="">Manage → IAM → Access groups</a>. Clicca su <strong>Create +</strong> per creare un nuovo gruppo di accesso. (È consigliato creare un nuovo gruppo di accesso appositamente per questo ruolo, piuttosto che aggiungere il ruolo al tuo gruppo Public Access, a meno che tu non voglia che tutti i tuoi utenti abbiano l&#x27;accesso concesso dal tuo ruolo personalizzato.) Una volta cliccato su <strong>Create +</strong> e assegnato un nome al nuovo gruppo (o, nel caso di modifica di un gruppo di accesso esistente, una volta cliccato sul nome del gruppo da modificare), clicca sulla scheda Access. Clicca su <strong>Assign access +</strong>.</p>
+<p>Vai a <a href="https://cloud.ibm.com/iam/groups" target="_blank" rel="noopener noreferrer" class="">Manage → IAM → Access groups</a>. Clicca su <strong>Create +</strong> per creare un nuovo gruppo di accesso. (Si consiglia di creare un nuovo gruppo di accesso appositamente per questo ruolo, piuttosto che aggiungere il ruolo al tuo gruppo Public Access, a meno che tu non voglia che tutti i tuoi utenti abbiano l&#x27;accesso concesso dal tuo ruolo personalizzato.) Una volta cliccato su <strong>Create +</strong> e assegnato un nome al nuovo gruppo (o, nel caso di modifica di un gruppo di accesso esistente, una volta cliccato sul nome del gruppo da modificare), clicca sulla scheda Access. Clicca su <strong>Assign access +</strong>.</p>
 </li>
 <li class="">
 <p>In Service, seleziona Quantum Compute, poi clicca su Next.</p>
 </li>
 <li class="">
-<p>In Resources, seleziona All resources, poi clicca su Next. (Nota che se non limiti l&#x27;accesso a tutte le risorse, il ruolo Analytics Viewer non sarà in grado di vedere le analisi di tutte le istanze.)</p>
+<p>In Resources, seleziona All resources, poi clicca su Next. (Nota che se non estendi l&#x27;accesso a tutte le risorse, il ruolo Analytics Viewer non sarà in grado di vedere le analisi di tutte le istanze.)</p>
 </li>
 <li class="">
 <p>In Roles and actions, spunta la casella Viewer (in Platform) e la casella Analytics Viewer (in Custom access), poi clicca su Next.</p>
 </li>
 <li class="">
-<p>Clicca su <strong>Add &gt;</strong>, poi clicca su Assign. Hai ora creato una policy che include il tuo ruolo personalizzato e il ruolo Viewer.</p>
+<p>Clicca su <strong>Add &gt;</strong>, poi clicca su Assign. Ora hai creato una policy che include sia il tuo ruolo personalizzato sia il ruolo Viewer.</p>
 </li>
 <li class="">
 <p>Visualizza il gruppo di accesso e clicca sulla scheda Users per aggiungere un utente a questo gruppo. Questo utente sarà ora in grado di eseguire le azioni nel tuo ruolo personalizzato (così come gli altri ruoli assegnati alla policy).</p>
